@@ -1,0 +1,29 @@
+h1{
+    color: blue;
+}
+#ampel1{
+    border: 5px dotted blue;
+    height: 150px;
+    width: 50px;
+    background-color: black;
+}
+
+#red1{
+    border: 1px solid red;
+    border-radius: 100%;
+    height: 50px;
+    /*background-color: red;*/
+}
+
+#green1{
+    border: 1px solid green;
+    border-radius: 100%;
+    height: 50px;
+    /*background-color: green; */
+}
+
+#yellow1{
+    border: 1px solid yellow;
+    border-radius: 100%;
+    height: 50px;
+}
