@@ -1,15 +1,20 @@
 <?php
-   class DB extends SQLite3{
-
-      public function baka(){
+   class MyDB {
+		
+		public function baka(){
+			return "hello baka";
+		}
+		
+		public function bakak
+      /*public function baka(){
          return "fggt bka";
-      }
+      }*/
 
-      public function red1(){
+     /* public function red1(){
          $db = new SQLite3("ampel.db");
          $selected = $db->query("SELECT * FROM Ampel");
-         return $selected;
-      }
+         return "baka";
+      }*/
    }
 
    
