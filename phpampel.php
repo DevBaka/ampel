@@ -1,12 +1,12 @@
 
 <?php
 class Ampel{
-    public static $_status = 0;
+  public static $_status = 0;
 	public static $_status2 = 0;
     
-    private static $_db_username = "root";
-    private static $_db_password = "HapsoxY?3347";
-    private static $_db_host = "127.0.0.1";
+    private static $_db_username = "devside";
+    private static $_db_password = "BaKaxY?3347";
+    private static $_db_host = "192.168.2.105";
     private static $_db_port = "3306";
     private static $_db_name = "Ampel";
     private static $_db;
@@ -28,7 +28,20 @@ class Ampel{
         }
         //echo "hello world";
     }
+
+
+	public function login($loginName, $userPass){
+		$stmt = self::$_db->prepare("SELECT * FROM users WHERE loginName='" . $loginName . "' AND userPass='" . $userPass . "'");
+		$stmt->bindParam(":loginName", $loginName);
+		$stmt->bindParam(":userPass", $userPass);
+		$stmt->execute();
+		$result= $stmt->fetchAll(PDO::FETCH_OBJ);
+		return $result;
+//		return " WORLD ";		
+
+	}
     
+
     public function zustand2(){
         /*$GLOBALS['status'] = $GLOBALS['status'] + 1;
         if($GLOBALS['status'] == 4){

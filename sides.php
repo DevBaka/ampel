@@ -26,6 +26,39 @@
 		case "arrays":
 			include("templates/arrays.php");
 			break;
+		case "login":
+			include("templates/login.php");
+			break;
+		case "logout":
+			include("templates/logout.php");
+			break;
+		case "register":
+			include("templates/register.php");
+			break;
+		case "willkommen":
+			include("templates/willkommen.php");
+			break;
+		case "session":
+			include("templates/sessions.php");
+			break;
+		case "sessionAmpel":
+			include("templates/sessionsAmpel.php");
+			break;
+		case "weihnachtskalender":
+			include("templates/wkalender.php");
+			break;
+
+
+		case "ipLogin":
+			include("templates/ipLogin.php");
+			break;
+		case "ipReg":
+			include("templates/ipReg.php");
+			break;
+		case "ipLog":
+			include("templates/ipLog.php");
+			break;
+
         default:
             include("templates/Start.php");
             break;

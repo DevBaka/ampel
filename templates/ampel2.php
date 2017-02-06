@@ -2,14 +2,14 @@
    require_once 'phpampel.php';
    $ampel = new Ampel();
    $zustand = $ampel->dbzustand2();
-   echo($zustand);
+   //echo($zustand);
 
 ?>
 
-<h1> hello world</h1>
+<h1> MySQL_Ampel</h1>
 <article>
     <?php
-        echo "<h2>" . $zustand . "</h2>";
+        //echo "<h2>" . $zustand . "</h2>";
         if($zustand == 0){ 
 		header("refresh:3;url=index.php?section=Ampel2");
             echo ''
@@ -138,9 +138,5 @@
 		<div id="green2" >
 		</div>
 	</div>
-	
-	<form method="POST">
-		<input type="submit" name="enter" value="Pressed" id="btn" class="Ampel1">
-	</form>
 	
 </article>

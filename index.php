@@ -1,7 +1,7 @@
 <?php
 
     $section = "";
-
+    session_start();
     if(isset($_GET["section"]))
     {
         $section = $_GET["section"];
@@ -12,8 +12,8 @@
         $section = "";
     }
 
-    require_once 'sql.php';
-    $db = new DB();
+    //require_once 'sql.php';
+    //$db = new DB();
 ?>
 
 <!DOCTYPE html>

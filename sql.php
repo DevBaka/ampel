@@ -1,8 +1,8 @@
 <?php
 class DB{
-    private static $_db_username = "root";
-    private static $_db_password = "HapsoxY?3347";
-    private static $_db_host = "127.0.0.1";
+    private static $_db_username = "devside";
+    private static $_db_password = "BaKaxY?3347";
+    private static $_db_host = "192.168.2.105";
     private static $_db_port = "3306";
     private static $_db_name = "Ampel";
     private static $_db;
@@ -32,6 +32,21 @@ class DB{
 		return $table;
 
 
+	}
+	
+	public function notes(){
+		$stmt = self::$_db->prepare("SELECT * FROM Bewertung");
+		$stmt->execute();
+		$result = $stmt->fetchall();
+		return $result;
+	}
+
+	public function notetables(){
+		$stmt = self::$_db->prepare("SELECT COUNT(*) FROM Bewertung");
+		$stmt->execute();
+		$tables = $stmt->fetchall();
+		//$result = mysql_query("SELECT * FROM Bewertung");
+		return $tables;
 	}
 
     

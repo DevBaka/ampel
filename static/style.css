@@ -145,7 +145,11 @@
     }
 
     /* Hier halt ebend nur die Section bzw der eigentliche Content der Page */
+    #notentables {
 
+        width: 25%;
+
+    }
 
     footer {
         border-radius: 0px 0px 30px 30px;
@@ -182,6 +186,14 @@
         background-color: #eee;
         height: 520px;
         padding: 20px;
+    }
+
+    #lblGesamtPunkte{
+        font-size: 17px;
+    }
+
+    #lblErreichtePunkte{
+        font-size: 17px;
     }
 
     #autor {
@@ -245,7 +257,52 @@
 		margin-top: 25px;
 	}
     
-    
+	#Stundenplan{
+		text-align: center;
+		margin-left: 10%;
+		background-color: #0F0;
+        width: 80%;
+        hight: 200px;
+	}
+	#Stundenplan td{
+		background-color: #FFF;
+        color: #000;
+	}
+	#Stundenplan tr{
+		background-color: #FFF;
+	}
+	#gesamtpoints{
+		width: 120px;
+		float:left;
+
+	}
+	#erreichtepoints{
+		width: 120px;
+		float: left;
+		margin-left: 5%;
+	}    
+	
+	#gesamtpunkte{
+		margin-top: 5%;
+	}
+
+    #erreichtepunkte{
+        margin-left: -26%;
+        background-color: green;
+    }
+
+    #lblIPReg{
+        float: left;
+    }
+    #iIPReg{
+        margin-left: 20%;
+    }
+
+    .ipReg{
+        margin-top: 5%;
+    }
+
+
 }
 @media screen and (max-width: 1000px){
     #wrapper {
@@ -275,9 +332,7 @@
     }
 
 
-    h1,h2{
-        color: red;
-    }
+
     #news{
         width: 400px;
     }
@@ -326,9 +381,7 @@
         height: auto;
         border-radius: 30px 30px 30px 30px;
     }
-    h1{
-        color: aquamarine;
-    }
+
     
     nav ul li a{
         margin-left: 100px;
